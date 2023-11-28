@@ -7,7 +7,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Label ID="lblStatus" runat="server" Text="Status:"></asp:Label>
         <br />
         <asp:Button runat="server" OnClick="btnLogout_Click" ID="Logout" Text="Logout" />
         <%if (Session["IsAdmin"] == null || !(bool)Session["IsAdmin"]) { }
