@@ -1,0 +1,69 @@
+﻿﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="WebForm1.aspx" method="post">
+        <table border="1" align="center">
+            <tr>
+                <td>
+                    first name:
+                </td>
+                <td>
+                    <input type="text" name="fName" id="fName" size="30" ; font-weight="bold" ;" />
+                </td>
+                <td>
+                    <input type="text" id="erFname" size="30" style="display: none; font-weight:bold;" disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    last name:
+                </td>
+                <td>
+                    <input type="text" name="lName" id="lName" size="30" ; font-weight="bold" ;" />
+                </td>
+                <td>
+                    <input type="text" id="erLname" size="30" style="display: none; font-weight:bold;" disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    email:
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" size="30" ; font-weight="bold" ;" />
+                </td>
+                <td>
+                    <input type="text" id="erEmail" size="30" style="display: none; font-weight:bold;" disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" size="30" style="font-weight:bold;" />
+                </td>
+                <td>
+                    <input type="text" id="erPassword" size="30" style="display: none; font-weight:bold;" disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" id="submit" disabled="disabled" value="submit to webForm" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div>
+        <button style="background-color:burlywood; margin:auto; display:block; font-size:medium" onclick="CheckForm()">
+            check input
+        </button>
+    </div>
+    <script src="CheckForm.js"></script>
+</body>
+</html>
